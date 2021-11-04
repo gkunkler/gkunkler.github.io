@@ -23,6 +23,7 @@ layout: default
 {%- for page in site._pages -%}
   {% if page.path contains '_posts/'%}
     <p>{{page.title}}</p>
+  {% endif %}
 {%- endfor -%}
 
   {{ content }}
