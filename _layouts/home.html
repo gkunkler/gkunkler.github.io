@@ -16,9 +16,12 @@ layout: default
     {% assign pages = site.pages %}
   {% endif %}
 
+
+
 <h1>{{site.pages.size}}</h1>
 
 {%- for page in site._pages -%}
+  {% if page.path contains '_posts/'%}
     <p>{{page.title}}</p>
 {%- endfor -%}
 
