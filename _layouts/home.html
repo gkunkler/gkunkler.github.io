@@ -18,13 +18,13 @@ layout: default
 
 <h1>{{pages.size}}</h1>
 
-{%- for page in site.posts -%}
+{%- for page in site._pages -%}
     <p>{{page.title}}</p>
 {%- endfor -%}
 
   {{ content }}
 
-
+<!---
 
   {%- if pages.size > 0 -%}
     {%- if page.list_title -%}
@@ -34,7 +34,7 @@ layout: default
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for page in pages -%}
       <li>
-        <!--- <span class="post-meta">{{ post.date | date: date_format }}</span> --->
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ page.title | escape }}
@@ -67,4 +67,5 @@ layout: default
 
   {%- endif -%}
 
+--->
 </div>
