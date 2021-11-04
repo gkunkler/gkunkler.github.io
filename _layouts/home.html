@@ -16,7 +16,7 @@ layout: default
     {% assign pages = site.pages %}
   {% endif %}
 
-<h1>{{pages.size}}</h1>
+<h1>{{site._pages.size}}</h1>
 
 {%- for page in site._pages -%}
     <p>{{page.title}}</p>
