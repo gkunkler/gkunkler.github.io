@@ -11,29 +11,29 @@ layout: default
 
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
+    {% assign pages = paginator.pages %}
   {% else %}
-    {% assign posts = site.posts %}
+    {% assign pages = site.pages %}
   {% endif %}
 
   {{ content }}
 
-  {%- if posts.size > 0 -%}
+  {%- if pages.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+      {%- for page in pages -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <!--- <span class="post-meta">{{ post.date | date: date_format }}</span> --->
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+            {{ page.title | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          {{ page.excerpt }}
         {%- endif -%}
       </li>
       {%- endfor -%}
