@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+<body>
+<a href="RustChessTrainer.html">link text</a>
+</body>
