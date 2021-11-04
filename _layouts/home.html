@@ -18,7 +18,13 @@ layout: default
 
 <h1>Header</h1>
 
+{%- for page in pages -%}
+    <p>Hello</p>
+{%- endfor -%}
+
   {{ content }}
+
+
 
   {%- if pages.size > 0 -%}
     {%- if page.list_title -%}
