@@ -20,9 +20,11 @@ layout: default
 
 <h1>{{site.pages.size}}</h1>
 
-{%- for page in site._pages -%}
+{%- for page in site.pages -%}
   {% if page.path contains '_posts/'%}
     <p>{{page.title}}</p>
+    <p>hello</p>
+
   {% endif %}
 {%- endfor -%}
 
