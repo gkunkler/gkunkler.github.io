@@ -8,19 +8,11 @@ layout: default
   {%- endif -%}
 
 
+{% assign pages = site.pages %}
 
+<h1>{{pages.size}}</h1>
 
-  {% if site.paginate %}
-    {% assign pages = paginator.pages %}
-  {% else %}
-    {% assign pages = site.pages %}
-  {% endif %}
-
-
-
-<h1>{{site.pages.size}}</h1>
-
-{%- for page in site.pages -%}
+{%- for page in pages -%}
   {% if page.path contains '_posts/'%}
     <p>{{page.title}}</p>
     <p>hello</p>
