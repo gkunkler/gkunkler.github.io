@@ -8,13 +8,18 @@ layout: default
   {%- endif -%}
 
 
-<h1>{{projects.size}}</h1>
+  {% for project in site.projects %}
+  <a href="{{project.permalink}}">
+  <div class="trigger">
+    <h1>{{project.title}}</h1>
+    <p>{{project.description}}</p>
+  </div>
+  </a>
+<hr>
 
-{% for project in projects %}
-  
-      <p>{{ project.title }}</p>
+  {% endfor %}
 
-{% endfor %}
+
 
   {{ content }}
 
