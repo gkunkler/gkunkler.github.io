@@ -8,7 +8,7 @@ layout: default
   {%- endif -%}
 
 
-{% assign pages = site.pages %}
+{%- assign pages = site.pages -%}
 
 <h1>{{pages.size}}</h1>
 
@@ -16,12 +16,12 @@ layout: default
   {%- if page.list_title -%}
   <h2 class="post-list-heading">{{ page.list_title }}</h2>
   {%- endif -%}
-  
-  {% if page.path contains '_posts/'%}
+
+  {%- if page.path contains '_posts/' -%}
     <p>{{page.title}}</p>
     <p>hello</p>
 
-  {% endif %}
+  {%- endif -%}
 {%- endfor -%}
 
   {{ content }}
