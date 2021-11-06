@@ -5,9 +5,8 @@ permalink: /chess-trainer/
 description: "An application that trains your chess position reflexes"
 repo: "https://github.com/Rettdog/Chess_Position_Trainer"
 languages: [Rust]
+order: 1
 ---
-
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
 <div class="wrapper">
   <div class="image-background">
@@ -31,7 +30,7 @@ languages: [Rust]
   </p>
   <p>
     I used the <a href="https://github.com/fltk-rs/fltk-rs">fltk-rs</a> library for the graphics. They have a similar structure to the Java
-    JFrames I am used to, so it wasn't to hard to understand. However, due to the safety measures built into the Rust language, I found it hard to
+    JFrames I am used to, so it wasn't too hard to understand. However, due to the safety measures built into the Rust language, I found it hard to
     pass variables into the graphics loop and methods and continue to change them. This made it extremely difficult and frusturating to draw things
     that I want the user to interact with, like the board and buttons. My solution to this problem was to include many <code>unsafe{}</code> blocks.
   </p>
