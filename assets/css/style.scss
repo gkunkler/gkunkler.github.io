@@ -1,0 +1,48 @@
+---
+---
+
+@import "minima";
+
+div.snippet h1{
+  padding-left: 10px;
+}
+
+div.snippet p{
+  padding-left: 10px;
+}
+
+div.snippet{
+  padding: 1px;
+  border-color: #e8e8e8;
+  border-style: hidden;
+  border-radius: 10px;
+}
+
+div.snippet h1, div.snippet p{
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+div.snippet:hover{
+  text-decoration: none;
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+  border-style: hidden;
+  border-radius: 10px;
+  outline-style: solid;
+  outline-color: #e8e8e8;
+  outline-width: 2px;
+}
+
+hr {
+  padding: 0px;
+  height:1px;
+  border-width:0;
+  color:#e8e8e8;
+  background-color:#e8e8e8;
+  width:95%;
+  margin: auto;
+}
