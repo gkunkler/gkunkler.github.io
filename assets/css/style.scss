@@ -3,6 +3,12 @@
 
 @import "minima";
 
+//show div boxes when testing
+// div {
+//   border-style: solid;
+//   border-color: black;
+// }
+
 //Adds space inside home page project links
 div.snippet h1, div.snippet p{
   padding-left: 10px;
@@ -74,6 +80,49 @@ div.separate {
   padding-left: 10%;
 }
 
+//makes space between both footer columns
+div.footer-col {
+  display: inline-block;
+  width: 40%;
+}
+
+//puts some space between contact info
+.contact-list a {
+  padding-right: 5px ;
+}
+
+//allows logo to go in the center
+.logo-wrapper{
+  display: inline-block;
+  max-width: 10%;
+  padding: 0px;
+  margin: 0px;
+}
+
+//sizes logo
+.logo-wrapper img{
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+//scales default wrapper padding
+.wrapper {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+//sizes and positions header logo
+.logo-header img{
+  padding-right:10px;
+  max-height: 50px;
+}
+
+//pushes header logo to top left
+.logo-header{
+  float: left;
+}
 // Adds tab to paragraphs
 // .tab p{
 //   text-indent: 45px;
