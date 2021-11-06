@@ -123,6 +123,12 @@ div.footer-col {
 .logo-header{
   float: left;
 }
+
+//replaces top grey border with white padding
+.site-header {
+  padding-top:5px;
+  border-top: 0px;
+}
 // Adds tab to paragraphs
 // .tab p{
 //   text-indent: 45px;
