@@ -3,14 +3,12 @@
 
 @import "minima";
 
-div.snippet h1{
+//Adds space inside home page project links
+div.snippet h1, div.snippet p{
   padding-left: 10px;
 }
 
-div.snippet p{
-  padding-left: 10px;
-}
-
+//Adds invisible border to home page project links to minimize shaking when you hover over them
 div.snippet{
   padding: 1px;
   border-color: #e8e8e8;
@@ -18,14 +16,17 @@ div.snippet{
   border-radius: 10px;
 }
 
+//Sets normal color for home page project links
 div.snippet h1, div.snippet p{
   color: black;
 }
 
+//Removes underline for links
 a:hover{
   text-decoration: none;
 }
 
+//Creates rounded box for home page project links
 div.snippet:hover{
   text-decoration: none;
   background-color: #e8e8e8;
@@ -37,6 +38,7 @@ div.snippet:hover{
   outline-width: 2px;
 }
 
+//Makes a solid horizontal line with same color as header
 hr {
   padding: 0px;
   height:1px;
@@ -46,3 +48,33 @@ hr {
   width:95%;
   margin: auto;
 }
+
+// Removes indent from wrapper for content in a post/page
+div.post-content div.wrapper{
+  padding: 0px !important;
+}
+
+// Creates a rounded rectangle frame around image
+div.image-background {
+  background-color: #e8e8e8;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 5%;
+}
+
+// Seperates div from surrounding elements on the top and bottom
+div.separate {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+//Sets max size and centers image for chess-trainer2.png
+#chess-trainer2-img {
+  max-width: 80%;
+  padding-left: 10%;
+}
+
+// Adds tab to paragraphs
+// .tab p{
+//   text-indent: 45px;
+// }
