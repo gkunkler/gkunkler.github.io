@@ -1,0 +1,54 @@
+---
+layout: project
+title: Ninjoreo
+description: "My first video game that includes custom art and music."
+repo: "https://github.com/Rettdog/Level2Game"
+languages: [Java]
+permalink: /ninjoreo/
+order: 1
+---
+
+<div class="wrapper">
+  <div class="image-background">
+    <img class="project-img" src="/assets/img/ninjoreo-main-page.png" alt="The main page for ninjoreo." id = "ninjoreo-main-img">
+  </div>
+</div>
+<div class="wrapper separate tab">
+  <h2>Project Description</h2>
+  <p>This is a 2d video game inspired by Doodle Jump. You jump on falling platforms and enemies for
+    as long as you can. Over time, the game and music speed up and it becomes more difficult.
+  There are also multiple themes that you can switch through with new art and music.</p>
+  <h2>Development</h2>
+  <p>This was my first video game project that I had designed by myself. I used a layout from the
+     tutorial I followed during class at the <a href="https://www.jointheleague.org/">League</a>.
+     I copied the three game state code and adapted it to my own game.
+   </p>
+   <p>The character, Ninjoreo, is a ninjoreo that I came up with in elementary and middle school. He debuted in a platformer game in Scratch that I created. You can view that project and others <a href="https://scratch.mit.edu/users/rettdog/">here</a>.</p>
+   <p>The game uses a <code>Timer</code> object to draw and update all of the game objects. In each
+     frame, an <code>KeyListener</code> checks for the controls and changes the velocity of
+     the player. When the player hits the top of a platform or enemy, it regains the ability to jump
+     and is set to a small upward velocity. Colliding with the bottom of an enemy causes the player to launch downward.
+   </p>
+   <p>One of the most difficult parts of this project was implementing the music. I composed, performed, and recorded my own music to be used
+   in the game. However, I didn't know how to play music in Java, but I had help from my teachers. When ended up using <code>JApplet</code>, which unfortunately doesn't seem to work anymore.
+   In order to make the music more dynamic, I set up code that could loop the in game music and change files in between loops so that I could increase the speed.
+   This also allowed me to make a version of the music for when the player falls, which added a transition to the main menu music.
+   This was my first time implementing music into a program in this way, and I hope to improve both my composition and recording skills.
+    </p>
+    <div class="wrapper">
+      <div class="image-background" id="ninjoreo-all-background">
+        <img class="project-img" src="/assets/img/ninjoreo-all.png" alt="All four different themes for Ninjoreo." id = "ninjoreo-all-img">
+      </div>
+    </div>
+   <p>A lot of the time and effort put into this game was used for additional artwork
+     using <a href="https://www.gimp.org/">GIMP</a> and original music. I added 3 different skins to play with
+     and each had its own theme and music. For the Totoro theme, I used music I found online and added two seperate items to knock out of the tree, which required
+     many changes to my previous framework. The effort may not have been worth it, but the final product turned out nice.
+   </p>
+   <p>In the end, I spent about 6 months working on this project for around 2 hours per week. It showed me that I had many skills that I could combine to create an
+     amazing final product. For a year and a half of programming experience, it turned out pretty well.</p>
+  <h2>Download</h2>
+  <p>If you would like to try out the game for yourself, here is a <a href="/assets/downloads/NinjoreoRunFile.jar">download link</a>. It is a jar file, and can be run on Java 11.
+     The music can be found <a href="/assets/downloads/ninjoreo-music.zip">here</a>.
+  </p>
+</div>

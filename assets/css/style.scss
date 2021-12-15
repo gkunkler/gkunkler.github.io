@@ -68,6 +68,11 @@ div.image-background {
   border-radius: 5%;
 }
 
+//fixing wide image corner
+#ninjoreo-all-background {
+  border-radius: 5%/12.5%;
+}
+
 // Seperates div from surrounding elements on the top and bottom
 div.separate {
   margin-top: 25px;
@@ -78,6 +83,18 @@ div.separate {
 #chess-trainer2-img {
   max-width: 80%;
   padding-left: 10%;
+}
+
+//Sets max size and centers image for ninjoreo-main-img
+#ninjoreo-main-img {
+  max-width: 50%;
+  padding-left: 25%;
+}
+
+//Sets max size and centers image for ninjoreo-all-img
+#ninjoreo-all-img {
+  max-width: 70%;
+  padding-left: 15%;
 }
 
 //makes space between both footer columns
