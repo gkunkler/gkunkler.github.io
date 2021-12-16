@@ -65,12 +65,16 @@ div.image-background {
   background-color: #e8e8e8;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 5%;
+  border-radius: 5%/5%;
 }
 
 //fixing wide image corner
 #ninjoreo-all-background {
   border-radius: 5%/12.5%;
+}
+
+#init-tracker-background {
+  border-radius: 5%/10%;
 }
 
 // Seperates div from surrounding elements on the top and bottom
@@ -93,6 +97,12 @@ div.separate {
 
 //Sets max size and centers image for ninjoreo-all-img
 #ninjoreo-all-img {
+  max-width: 70%;
+  padding-left: 15%;
+}
+
+//Sets max size and centers image for ninjoreo-all-img
+#init-tracker-img {
   max-width: 70%;
   padding-left: 15%;
 }
