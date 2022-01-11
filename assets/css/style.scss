@@ -77,6 +77,10 @@ div.image-background {
   border-radius: 5%/10%;
 }
 
+#gravity-simulator-background {
+  border-radius: 5%/7.5%;
+}
+
 // Seperates div from surrounding elements on the top and bottom
 div.separate {
   margin-top: 25px;
@@ -110,6 +114,16 @@ div.separate {
 #random-word-generator-img {
   max-width: 50%;
   padding-left: 25%;
+}
+
+#gravity-simulator-img {
+  max-width: 80%;
+  padding-left: 10%;
+}
+
+#impossible-maze-img {
+  max-width: 80%;
+  padding-left: 10%;
 }
 
 //makes space between both footer columns
