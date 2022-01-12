@@ -78,7 +78,11 @@ div.image-background {
 }
 
 #gravity-simulator-background {
-  border-radius: 5%/7.5%;
+  border-radius: 5%/12.5%;
+}
+
+#phone-number-word-finder-background {
+  border-radius: 5%/12.5%;
 }
 
 // Seperates div from surrounding elements on the top and bottom
@@ -122,6 +126,11 @@ div.separate {
 }
 
 #impossible-maze-img {
+  max-width: 80%;
+  padding-left: 10%;
+}
+
+#phone-number-word-finder-img {
   max-width: 80%;
   padding-left: 10%;
 }

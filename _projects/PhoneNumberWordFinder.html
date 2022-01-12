@@ -1,0 +1,39 @@
+---
+layout: project
+title: Phone Number Word Finder
+description: "A program that finds all words located in a given phone number"
+repo: "https://github.com/Rettdog/Home/blob/master/src/PhoneNumber2.java"
+languages: [Java]
+permalink: /phone-number-word-finder/
+order: 7
+---
+
+<div class="wrapper">
+  <div class="image-background" id="phone-number-word-finder-background">
+    <img class="project-img" src="/assets/img/phone-number-word-finder.png" alt="Some words found in a phone number and the input for the phone number" id = "phone-number-word-finder-img">
+  </div>
+</div>
+<div class="wrapper separate tab">
+  <h2>Project Description</h2>
+  <p>This is a utility program that finds words in a given phone number. Using the pattern found on a 12-key telephone, many phone number
+    contain words that can aid in memory and be a fun fact to know. The user inputs a 10-digit phone number
+    and the program returns two text files. The first contains all of the possible letter and number combinations and the second has all of
+    those combinations that have segments matching words in a dictionary text file.</p>
+  <h2>Development</h2>
+  <p>This project was my first personal project after starting classes at the <a href="https://www.jointheleague.org/">League of Amazing Programmers</a>.
+  I remembered a challenge my dad gave me when I was coding in <a href="https://scratch.mit.edu/">Scratch</a>. It had been too complicated for me then, but I wanted to try using
+my new knowledge of Java to solve it.</p>
+<p>
+  The code is not very pretty. I used a series of nested <code>for loops</code> to cycle through all of the possible permutations given the number in each digit.
+  Since I was still an amatuer coder, I created long lists of variables instead of arrays.
+</p>
+<p>Some limitations with my very concrete solution are that it takes a while to run and only finds words in specific sections of the phone number.
+This program only will register words in the first 3, first 7, middle 3, and final 4 numbers.</p>
+<p>While this challenge was definitely difficult for me when I was first learning Java, I learned a lot during the process. I would definitely recommend this
+to anyone with only a little bit of programming experience under their belt. With the knowledge I have now, I would solve this much differently,
+but it is really interesting to see my ideas from many years ago.</p>
+  <h2>Download</h2>
+  <p>If you would like to test this code, here is a <a href="/assets/downloads/PhoneNumberWordFinder.zip">download link</a>. Just extract the zip folder and run
+    the JAR file using java 11. It will create 2 additional files: finish.txt and phone.txt. To see the words in your phone number, look in finish.txt. If you would like a more simplified
+  result, you can try <a href="https://www.hanginghyena.com/finder/phone-number-to-words">this online resource</a>, though I don't know how secure it is. Use at your own discretion.</p>
+</div>
