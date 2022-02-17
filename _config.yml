@@ -20,7 +20,7 @@
 
 title: Rettdog's Projects
 author: Garrett Kunkler
-description: Rettdog's GitHub page that will contain highlights of various projects.
+description: Rettdog's GitHub page that documents highlights of various projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rettdog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Rettdog
