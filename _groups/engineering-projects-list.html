@@ -1,26 +1,29 @@
 ---
 layout: default
+title: Engineering Projects
+permalink: /engineering-projects/
+categories: groups
+order: 2
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-
-{{ content }}
 
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {% assign sorted_categories = site.groups | sort: 'order'%}
+  {% assign sorted_coding_projects = site.engineering_projects | sort: 'order'%}
 
-  {% for category in sorted_categories %}
+  {% for project in sorted_coding_projects%}
 
-  <a href="{{category.permalink}}">
+  <a href="{{project.permalink}}">
     <div class="trigger snippet">
       {% if forloop.first == false %}
       <hr class="line">
       {% endif %}
-      <h1>{{category.title}}</h1>
+      <h1>{{project.title}}</h1>
+      <p>{{project.description}}</p>
     </div>
   </a>
 

@@ -56,9 +56,9 @@ sass:
 #   - vendor/ruby/
 
 collections:
-  projects:
+  coding_projects:
     output: true
-    order:
-      - ProjectsToAdd.html
-      - ChessTrainer.html
-      - Ninjoreo.html
+  engineering_projects:
+    output: true
+  groups:
+    output: true
