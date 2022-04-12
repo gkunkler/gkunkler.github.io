@@ -4,12 +4,18 @@ layout: default
 
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
-{{ content }}
+
 
 <div class="home">
-  {%- if page.title -%}
+  <!---- {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {%- endif -%} ---->
+
+  {{ content }}
+
+  <hr class="intro-line">
+
+  <p></p>
 
   {% assign sorted_categories = site.groups | sort: 'order'%}
 

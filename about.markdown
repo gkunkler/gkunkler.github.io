@@ -4,4 +4,15 @@ title: About Me
 permalink: /about/
 ---
 
-Hi. I'm Garrett. I currently (as of Winter 2022) a first-year mechanical engineering major at Cal Poly SLO. I am interested in programming, robotics, and other technology related applications of math and physics.
+Hello. I'm Garrett. I am currently a first-year mechanical engineering major at Cal Poly SLO. I'm interested in programming, robotics, and other technologies related applications of math and physics.
+
+I have over 4 years of programming experience. I took classes at the [League of Amazing Programmers](https://www.jointheleague.org/) throughout high school.
+This culminated in me passing of the Oracle Java SE 8 Programmer I Certification Exam. I also have various levels of experience in many other languages. I am fairly proficient in Python, and done at least one project in each of Ruby, Rust, MATLAB, and Unity. You can check out those projects [here](https://rettdog.github.io/coding-projects/).
+
+Here are some important links if you are interested in learning more about me:
+
+[LinkedIn](www.linkedin.com/in/gkunkler)
+
+[Github](https://github.com/Rettdog)
+
+[Site last updated: 4/6/2022]

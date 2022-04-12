@@ -13,6 +13,9 @@ order: 2
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  <p>This section is currently in creation. Check back soon for info one some of my engineering
+    projects such as a rubber-band powered cart, arduino robot, and others.</p>
+
   {% assign sorted_coding_projects = site.engineering_projects | sort: 'order'%}
 
   {% for project in sorted_coding_projects%}

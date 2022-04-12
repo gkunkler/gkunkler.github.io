@@ -65,25 +65,35 @@ div.image-background {
   background-color: #e8e8e8;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 5%/5%;
+  //border-radius: 5%/5%;
+  border-radius:30px/30px;
+}
+
+hr.intro-line{
+  color:#000000;
+  background-color:#000000;
 }
 
 //fixing wide image corner
-#ninjoreo-all-background {
-  border-radius: 5%/12.5%;
-}
-
-#init-tracker-background {
-  border-radius: 5%/10%;
-}
-
-#gravity-simulator-background {
-  border-radius: 5%/12.5%;
-}
-
-#phone-number-word-finder-background {
-  border-radius: 5%/12.5%;
-}
+// #ninjoreo-all-background {
+//   border-radius: 5%/12.5%;
+// }
+//
+// #init-tracker-background {
+//   border-radius: 5%/10%;
+// }
+//
+// #gravity-simulator-background {
+//   border-radius: 5%/12.5%;
+// }
+//
+// #phone-number-word-finder-background {
+//   border-radius: 5%/12.5%;
+// }
+//
+// #ode-solver-background {
+//   border-radius: 5%/10%;
+// }
 
 // Seperates div from surrounding elements on the top and bottom
 div.separate {
@@ -136,6 +146,11 @@ div.separate {
 }
 
 #flappy-bird-img {
+  max-width: 70%;
+  padding-left: 15%;
+}
+
+#ode-solver-img {
   max-width: 70%;
   padding-left: 15%;
 }
