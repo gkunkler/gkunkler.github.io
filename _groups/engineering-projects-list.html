@@ -16,9 +16,9 @@ order: 2
   <p>This section is currently in creation. Check back soon for info on some of my engineering
     projects such as a rubber-band powered cart, arduino robot, and others.</p>
 
-  {% assign sorted_coding_projects = site.engineering_projects | sort: 'order'%}
+  {% assign sorted_engineering_projects = site.engineering_projects | sort: 'order'%}
 
-  {% for project in sorted_coding_projects%}
+  {% for project in sorted_engineering_projects%}
 
   <a href="{{project.permalink}}">
     <div class="trigger snippet">
