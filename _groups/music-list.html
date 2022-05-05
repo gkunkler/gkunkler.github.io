@@ -1,0 +1,46 @@
+---
+layout: default
+title: Music
+permalink: /music/
+categories: groups
+order: 4
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  <p>I am an amatuer composer and producer. I was first exposed to composition from piano lessons from 3rd grade through high school.
+    One of my two recitals each year was a self-composed solo piece on the piano. </p>
+    <p>I recently started learning to apply more music
+    theory knowledge to my compositions as well as integrating DAW software into my toolset. I currently use FL Studio, and I am experimenting with
+    Musescore for writing sheet music.</p>
+    <p>I would reccomend downloading for the the best listening experience.</p>
+
+  {% assign sorted_music = site.music | sort: 'order' | reverse%}
+
+  {% for project in sorted_music%}
+
+  {% if forloop.first == false %}
+    <hr class="line">
+  {% endif %}
+
+  <div class="music snippet">
+
+    <h1>{{project.title}}</h1>
+    <h3>{{project.finished}}</h3>
+    {% if project.filename %}
+      <audio controls src={{project.filename}} type="audio/mpeg">
+      Embeded mp3 not supported by your browser
+      </audio>
+    {% endif %}
+    <p></p>
+    <p>{{project.description}}{% if project.link %}<a href={{project.link}}>{{project.link}}</a>{% endif %}</p>
+  </div>
+
+  {% endfor %}
+
+</div>

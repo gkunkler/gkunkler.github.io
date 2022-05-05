@@ -10,7 +10,7 @@
 // }
 
 //Adds space inside home page project links
-div.snippet h1, div.snippet p{
+div.snippet h1, div.snippet h2, div.snippet h3, div.snippet p{
   padding-left: 10px;
 }
 
@@ -33,10 +33,35 @@ a:hover{
 }
 
 //Creates rounded box for home page project links
-div.snippet:hover{
+div.snippet:not(.music):hover{
   text-decoration: none;
   background-color: #e8e8e8;
   border-color: #e8e8e8;
+  border-style: hidden;
+  border-radius: 10px;
+  outline-style: solid;
+  outline-color: #e8e8e8;
+  outline-width: 2px;
+}
+
+//music snippets
+div.music{
+  padding: 5%;
+}
+
+div.music h1{
+  margin-bottom: 0%;
+}
+
+//music boxes for debugging
+// div.music p,div.music h1, div.music h3, div.music h2{
+//   border-style:solid;
+//   border-color:#000000;
+// }
+
+//no hover for music snippets
+div.music:hover{
+  text-decoration: none;
   border-style: hidden;
   border-radius: 10px;
   outline-style: solid;
