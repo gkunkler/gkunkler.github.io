@@ -15,7 +15,7 @@ order: 1
 
   {% assign sorted_coding_projects = site.coding_projects | sort: 'order'%}
 
-  {% for project in sorted_coding_projects%}
+  {% for project in sorted_coding_projects reversed %}
 
   <a href="{{project.permalink}}">
     <div class="trigger snippet">

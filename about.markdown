@@ -15,6 +15,6 @@ Here are some important links if you are interested in learning more about me:
 
 [Github](https://github.com/Rettdog)
 
-[Resume](/assets/downloads/Resumes/Garrett_Kunkler_Resume.pdf)
+[Resume](/assets/downloads/Resumes/Garrett_Kunkler_Resume_1-23.pdf)
 
-[Site last updated: 10/4/2022]
+[Site last updated: 1/10/2023]
