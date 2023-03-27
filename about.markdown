@@ -17,4 +17,4 @@ Here are some important links if you are interested in learning more about me:
 
 [Resume](/assets/downloads/Resumes/Garrett_Kunkler_Resume_2-26.pdf)
 
-[Site last updated: 2/26/2023]
+[Site last updated: 3/26/2023]
