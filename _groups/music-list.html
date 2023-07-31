@@ -38,7 +38,18 @@ order: 4
       </audio>
     {% endif %}
     <p></p>
-    <p>{{project.description}}{% if project.link %}<a href={{project.link}}>{{project.link}}</a>{% endif %}</p>
+    <p>{{project.description}}</p>
+    <p>{% if project.link %}
+      <a href={{project.link}}>{% if project.link-text %}{{project.link-text}}{% else %}{{project.link}}{% endif %}</a>{% endif %}</p>
+    {% if project.video %}</p>
+    
+    <div class="video-container">
+    <iframe class="music-video" height="315" src={{project.video}} 
+    allow="encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+    </div>
+    
+    {% endif %}
   </div>
 
   {% endfor %}
