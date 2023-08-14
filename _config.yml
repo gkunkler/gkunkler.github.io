@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rettdog's Projects
+title: Garrett's Projects
 author: Garrett Kunkler
-description: Rettdog's GitHub page that documents highlights of various projects.
+description: Garrett Kunkler's GitHub page that documents highlights of various projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rettdog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Rettdog
