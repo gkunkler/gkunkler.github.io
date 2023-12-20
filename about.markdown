@@ -21,4 +21,4 @@ If you would like to see what else I've done, here are a few links to get you st
 
 [Resume](/assets/downloads/Resumes/GarrettKunkler_Resume_F2023.pdf)
 
-[Site last updated: 10/8/2023]
+[Site last updated: 11/23/2023]
