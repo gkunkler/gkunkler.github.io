@@ -10,7 +10,7 @@ order: 4
 
 <div class="wrapper">
   <div class="image-background">
-    <img class="sailless-1-img" src="/assets/img/sailless-1.jpg" alt="Garrett riding a PVC cart" id = "sailless-1-img">
+    <img class="sailless-img" src="/assets/img/sailless-1.jpg" alt="Garrett riding a PVC cart" id = "sailless-img">
   </div>
 </div>
 
@@ -35,7 +35,7 @@ During the design process, I worked on creating a CAD model and drawings that co
 
 <div class="wrapper">
   <div class="image-background">
-    <img class="sailless-4-img" src="/assets/img/sailless-4.png" alt="Final CAD model for the PVC kart" id = "sailless-4-img">
+    <img class="sailless-img" src="/assets/img/sailless-4.png" alt="Final CAD model for the PVC kart" id = "sailless-img">
   </div>
 </div>
 
