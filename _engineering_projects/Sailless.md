@@ -43,4 +43,4 @@ I learned a lot while working on this project. It was a great opportunity to app
 
 ## Final Report
 
-With the consent of my teammates, I've attached our final report, which includes more details about the materials list, assembly drawings, and testing.
+With the consent of my teammates, I've attached our [final report](/assets/downloads/Sailless_Final_Report.pdf "Final Report"), which includes more details about the materials list, assembly drawings, and testing.
