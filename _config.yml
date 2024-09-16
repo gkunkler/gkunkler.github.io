@@ -60,6 +60,10 @@ collections:
     output: true
   engineering_projects:
     output: true
+  work_experience:
+    output: true
+  research:
+    output: true
   groups:
     output: true
   music:

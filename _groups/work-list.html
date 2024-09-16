@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Engineering Projects
-permalink: /engineering-projects/
+title: Work Experience
+permalink: /work-experience/
 categories: groups
-order: 4
+order: 1
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
@@ -13,11 +13,11 @@ order: 4
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <p>I am currently studying engineering at Cal Poly SLO. This page contains the engineering projects I have worked on so far.</p>
+  <p>Throughout my academic career, I have had the pleasure to get industry experience at multiple companies through various internship programs.</p>
 
-  {% assign sorted_engineering_projects = site.engineering_projects | sort: 'order' | reverse%}
+  {% assign sorted_work_experience = site.work_experience | sort: 'order' | reverse%}
 
-  {% for project in sorted_engineering_projects%}
+  {% for project in sorted_work_experience%}
 
   <a href="{{project.permalink}}">
     <div class="trigger snippet">

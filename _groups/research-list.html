@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Engineering Projects
-permalink: /engineering-projects/
+title: Research
+permalink: /research/
 categories: groups
-order: 4
+order: 3
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
@@ -13,11 +13,11 @@ order: 4
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <p>I am currently studying engineering at Cal Poly SLO. This page contains the engineering projects I have worked on so far.</p>
+  <p>I hope this list will grow as I dive deeper into interesting research projects.</p>
 
-  {% assign sorted_engineering_projects = site.engineering_projects | sort: 'order' | reverse%}
+  {% assign sorted_research = site.research | sort: 'order' | reverse%}
 
-  {% for project in sorted_engineering_projects%}
+  {% for project in sorted_research%}
 
   <a href="{{project.permalink}}">
     <div class="trigger snippet">
