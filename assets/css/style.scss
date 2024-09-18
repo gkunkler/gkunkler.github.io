@@ -21,7 +21,7 @@ $font: "Trebuchet MS";
 $backup-font: "Copperplate";
 
 // Default Lengths
-$header-height: 120px;
+$header-height: 100px;
 $link-outline-width: 2px;
 $item-radius: 10px;
 $image-radius: 25px;
@@ -32,7 +32,7 @@ body {
   background-color: $color1;
   color: $color2;
   font-family: $font, $backup-font;
-  min-width: 500px;
+  // min-width: 400px;
 
   a:hover:not(.no-link-underline){
     text-decoration: underline;
@@ -78,6 +78,11 @@ body {
     background-color: $color2;
     border-width: 0px;
     position: bottom;
+
+    display:flex;
+    justify-content: space-between;
+    align-content: baseline;
+
   }
 
   .logo-header {
@@ -90,16 +95,17 @@ body {
 .site-title{
   // format site title
   color: $color1;
-  font-size: 4em;
+  font-size: 3em;
   font-family: $font, $backup-font;
   padding: 30px;
   padding-left: 0;
   z-index: 2;
+  display:block;
 }
 
 .site-nav {
   // vertically center subpage list (need to fix for menu icon)
-  padding-top: 30px;
+  margin-top: 40px;
   background-color: $color2;
   border: none;
 
@@ -190,7 +196,7 @@ hr {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto 1fr;
   gap: 2%;
   padding-bottom: 40px;
