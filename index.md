@@ -6,7 +6,11 @@ layout: home
 title: Home
 
 ---
-# Welcome to my project portfolio.
+
+<div class="home-title">
+  <h1>Explore my Portfolio</h1>
+</div>
+
 
 Here you will find information on the projects I have worked on throughout the years.
 

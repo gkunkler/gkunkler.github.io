@@ -14,10 +14,10 @@
           {% endif -%}
           <li>
           {% if site.github_username %}
-            <a href="https://github.com/{{site.github_username}}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> {{site.github_username}}</a>
+            <a class="link-underline" href="https://github.com/{{site.github_username}}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> {{site.github_username}}</a>
           {% endif %}
           {% if site.linkedin %}
-            <a href="https://linkedin.com/in/{{site.linkedin}}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> {{site.author}}</a>
+            <a class="link-underline" href="https://linkedin.com/in/{{site.linkedin}}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> {{site.author}}</a>
           {% endif %}
           </li>
         </ul>
@@ -33,12 +33,6 @@
       </div>
 
     </div>
-
-
-
-    <!-- <div class="social-links">
-      {%- include social.html -%}
-    </div> -->
 
   </div>
 

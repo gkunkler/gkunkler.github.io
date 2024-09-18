@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Garrett's Projects
+title: Garrett Kunkler
 author: Garrett Kunkler
-description: Garrett Kunkler's GitHub page that documents highlights of various projects.
+description: My digital portfolio that documents my progress in work and personal projects
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rettdog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  Rettdog
+github_username:  rettdog
 linkedin: garrett-kunkler-63099a222
 
 # Build settings
@@ -56,15 +56,20 @@ sass:
 #   - vendor/ruby/
 
 collections:
-  coding_projects:
+  coding:
     output: true
-  engineering_projects:
+    permalink: /:collection/:title
+  engineering:
     output: true
-  work_experience:
+    permalink: /:collection/:title
+  work:
     output: true
+    permalink: /:collection/:title
   research:
     output: true
+    permalink: /:collection/:title
   groups:
     output: true
+    permalink: /:collection/:title
   music:
     output: true

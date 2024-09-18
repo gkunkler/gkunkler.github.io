@@ -19,17 +19,24 @@ layout: default
 
   {% assign sorted_categories = site.groups | sort: 'order'%}
 
-  {% for category in sorted_categories %}
+  <div class="grid">
 
-  <a href="{{category.permalink}}">
-    <div class="trigger snippet">
-      {% if forloop.first == false %}
-      <hr class="line">
-      {% endif %}
-      <h1>{{category.title}}</h1>
-    </div>
-  </a>
+    {% for category in sorted_categories %}
 
-  {% endfor %}
+    <a class="no-link-underline" href="{{category.permalink}}">
+      <div class="trigger grid-preview item-shadow">
+
+        {% if category.icon %}
+        <img class="grid-preview-icon" src="{{category.icon}}" alt="Brackets with slash between them">
+        {% endif %}
+        <div class="grid-preview-text">
+          <h1>{{category.title}}</h1>
+          <p>{{category.description}}</p>
+        </div>
+      </div>
+    </a>
+
+    {% endfor %}
+  </div>
 
 </div>

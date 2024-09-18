@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<article class="post">
+
+  <header class="post-header">
+    
+    <div class="post-title">
+      <a href="{{page.url | remove: page.slug}}">
+        <image class="back-button" src="/assets/img/back-icon.png" alt="Back button"></image>
+      </a>
+      <h1>{{ page.title | escape }}</h1>
+        
+    </div>
+    <div class="post-details">
+        <h2 class="post-date"> {{page.time}}</h2>
+        <div class="tags-wrapper">
+        {% for tag in page.tags %}
+            <p class="post-tag">•{{tag}}</p>
+        {% endfor %}
+        </div>
+
+        {% if page.repo %}
+            <a class="github" href="{{page.repo}}"><h3>GitHub Repository</h3></a>
+        {% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+
+
+
+

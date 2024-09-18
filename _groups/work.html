@@ -1,0 +1,41 @@
+---
+layout: page
+title: Work Experience
+description: Professional jobs and internships I've done
+icon: /assets/img/work-icon.png
+permalink: /work/
+slug: work
+categories: groups
+order: 1
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<div class="home">
+  <p>Throughout my academic career, I have had the pleasure to get industry experience at multiple companies through various internship programs.</p>
+  <p>NOTE: These pages are just placeholders until until I add all of the details soon.</p>
+
+  {% assign sorted_work = site.work | sort: 'order' | reverse%}
+
+  {% for project in sorted_work%}
+
+  <a class="no-link-underline" href="{{project.url}}">
+    <div class="trigger snippet item-shadow">
+
+      <div class="snippet-title">
+        <h2>{{project.title}}</h1>
+        <h3>{{project.time}}</h3>
+      </div>
+      
+      <p>{{project.description}}</p>
+      <div class="snippet-tags-wrapper">
+        {% for tag in project.tags %}
+            <p class="snippet-tag">•{{tag}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </a>
+
+  {% endfor %}
+
+</div>

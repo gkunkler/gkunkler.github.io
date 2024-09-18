@@ -1,0 +1,41 @@
+---
+layout: page
+title: Engineering Projects
+description: Physical engineering projects I have worked on at Cal Poly
+icon: /assets/img/engineering-icon.png
+permalink: /engineering/
+slug: engineering
+categories: groups
+order: 4
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<div class="home">
+
+  <p>I am currently studying engineering at Cal Poly SLO. This page contains the engineering projects I have worked on so far.</p>
+
+  {% assign sorted_engineering = site.engineering | sort: 'order' | reverse%}
+
+  {% for project in sorted_engineering%}
+
+  <a class="no-link-underline" href="{{project.url}}">
+    <div class="trigger snippet item-shadow">
+      <div class="snippet-title">
+        <h2>{{project.title}}</h1>
+        <h3>{{project.time}}</h3>
+      </div>
+
+      <p>{{project.description}}</p>
+
+      <div class="snippet-tags-wrapper">
+        {% for tag in project.tags %}
+            <p class="snippet-tag">•{{tag}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </a>
+
+  {% endfor %}
+
+</div>

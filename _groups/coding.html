@@ -1,0 +1,43 @@
+---
+layout: page
+title: Coding Projects
+description: A compilation of psuedo-blog posts about the personal coding projects I've worked on
+icon: /assets/img/coding-icon.png
+permalink: /coding/
+slug: coding
+categories: groups
+order: 2
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<div class="home">
+
+  {% assign sorted_coding = site.coding | sort: 'order'%}
+
+  {% for project in sorted_coding reversed %}
+
+  <a class="no-link-underline" href="{{project.url}}">
+
+    <div class="trigger snippet item-shadow">
+
+      <div class="snippet-title">
+        <h2>{{project.title}}</h1>
+        <h3>{{project.time}}</h3>
+      </div>
+
+      <p>{{project.description}}</p>
+
+      <div class="snippet-tags-wrapper">
+        {% for tag in project.tags %}
+            <p class="snippet-tag">•{{tag}}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+
+  </a>
+
+  {% endfor %}
+
+</div>

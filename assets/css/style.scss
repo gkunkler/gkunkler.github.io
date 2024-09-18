@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "minima";
+@use "minima";
 
 //show div boxes when testing
 // div {
@@ -9,235 +9,457 @@
 //   border-color: black;
 // }
 
-//Adds space inside home page project links
-div.snippet h1, div.snippet h2, div.snippet h3, div.snippet p{
-  padding-left: 10px;
+// Tempalate Colors
+$color1: #DADDD8;
+$color2: #1A1D23;
+$color3: #f1efee;
+$color4: #e78888;
+
+$box-shadow-color: hsl(0deg 0% 0% / 0.075);
+$font: "Trebuchet MS";
+$backup-font: "Copperplate";
+
+// Default Lengths
+$header-height: 120px;
+$link-outline-width: 2px;
+$item-radius: 10px;
+$image-radius: 25px;
+$post-details-padding: 10px;
+
+// === Basic overriding of colors from minima template ===
+body {
+  background-color: $color1;
+  color: $color2;
+  font-family: $font, $backup-font;
+  min-width: 500px;
+
+  a:hover:not(.no-link-underline){
+    text-decoration: underline;
+    color: $color4;
+    text-decoration-thickness: 2px;
+  }
 }
 
-//Adds invisible border to home page project links to minimize shaking when you hover over them
-div.snippet{
-  padding: 1px;
-  border-color: #e8e8e8;
-  border-style: hidden;
-  border-radius: 10px;
+.site-header *, .site-footer *{
+  color: $color1;
+  font-family: $font, $backup-font;
 }
 
-//Sets normal color for home page project links
-div.snippet h1, div.snippet p{
-  color: black;
+// === Header formatting ===
+
+.logo-header{
+  // pushes header logo to top left
+  float: left;
+  position: absolute;
+  z-index: -1;
+  
+  img {
+    // sizes and positions header logo
+    // height: calc($header-height + 14px);
+    // min-width: calc($header-height + 14px);
+    height: $header-height;
+    min-width: $header-height;
+    padding: 0;
+    z-index: -1;
+  }
 }
 
-//Removes underline for links
+.site-header {
+  // modify borders (doesn't work)
+  border-width: 0px;
+  background-color: $color2;
+  z-index: 2;
+
+  box-shadow: 0px 10px 20px $box-shadow-color, -10px 10px 20px $box-shadow-color, 10px 10px 20px $box-shadow-color;
+
+  div.wrapper {
+    height: $header-height;
+    background-color: $color2;
+    border-width: 0px;
+    position: bottom;
+  }
+
+  .logo-header {
+    bottom: 0px;
+    border-width: 0px;
+  }
+
+}
+
+.site-title{
+  // format site title
+  color: $color1;
+  font-size: 4em;
+  font-family: $font, $backup-font;
+  padding: 30px;
+  padding-left: 0;
+  z-index: 2;
+}
+
+.site-nav {
+  // vertically center subpage list (need to fix for menu icon)
+  padding-top: 30px;
+  background-color: $color2;
+  border: none;
+
+  .menu-icon > svg path {
+    fill: $color3
+  }
+
+  .page-link {
+    color: $color1
+  }
+}
+
+// === Footer formating ===
+
+.site-footer {
+  background-color: $color2;
+
+  a, a:visited {
+    color: $color1;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}
+
+div.footer-col {
+  //makes space between both footer columns
+  display: inline-block;
+  width: 40%;
+}
+
+.contact-list a {
+  //puts some space between contact info
+  padding-right: 5px;
+}
+
+// === Link Formatting ===
+
+a, a:visited {
+  text-decoration: none;
+  color: $color4;
+}
+
 a:hover{
+
   text-decoration: none;
+  
+  .item-shadow {
+    box-shadow: 0 4px 4px $box-shadow-color, 0 16px 16px $box-shadow-color, 0 24px 24px $box-shadow-color;
+  }
 }
 
-//Creates rounded box for home page project links
-div.snippet:not(.music):hover{
-  text-decoration: none;
-  background-color: #e8e8e8;
-  border-color: #e8e8e8;
-  border-style: hidden;
-  border-radius: 10px;
-  outline-style: solid;
-  outline-color: #e8e8e8;
-  outline-width: 2px;
+a.link-underline:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-//music snippets
-div.music{
-  padding: 5%;
+// === Set up home screen ===
+
+.home-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  h1 {
+    font-size:60px;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
 }
 
-div.music h1{
-  margin-bottom: 0%;
-}
-
-//music boxes for debugging
-// div.music p,div.music h1, div.music h3, div.music h2{
-//   border-style:solid;
-//   border-color:#000000;
-// }
-
-//no hover for music snippets
-div.music:hover{
-  text-decoration: none;
-  border-style: hidden;
-  border-radius: 10px;
-  outline-style: solid;
-  outline-color: #e8e8e8;
-  outline-width: 2px;
-}
-
-//Makes a solid horizontal line with same color as header
 hr {
+  //Makes a solid horizontal line with same color as header
   padding: 0px;
-  height:1px;
-  border-width:0;
-  color:#e8e8e8;
-  background-color:#e8e8e8;
+  height: 2px;
+  border-width: 0;
+  color: $color2;
   width:95%;
   margin: auto;
+
+  .intro-line {
+    color:$color2;
+    background-color:$color2;
+  }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 2%;
+  padding-bottom: 40px;
+}
+
+.grid-preview {
+  color: $color2;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $color3;
+  padding: 10px;
+  border-radius: $item-radius;
+  // height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-preview a {
+  display: block;
+}
+
+div.grid-preview:hover{
+  outline-style: solid;
+  outline-color: $color3;
+  outline-width: $link-outline-width;
+}
+
+.grid-preview-icon {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  max-height: 100px;
+  max-width: 50%;
+}
+
+// === Default formatting for snippet (lists of pages with info from front matter) ===
+
+div.snippet{
+
+  padding: 1px;
+  border-radius: $item-radius;
+  background-color: $color3;
+  margin-bottom: 15px;
+
+  h1, h2, h3, p {
+    padding-left: 10px;
+    color: $color2;
+  }
+}
+
+div.snippet:not(.music):hover{
+  text-decoration: none;
+  outline-style: solid;
+  outline-color: $color3;
+  outline-width: $link-outline-width;
+  text-decoration: none;
+}
+
+.snippet-tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content:flex-end;
+  align-items: baseline;
+
+  padding-left: $post-details-padding;
+  padding-right: $post-details-padding;
+  margin:auto;
+}
+
+.snippet-tag {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+// === Code formatting ===
+
+code {
+  background-color: $color3;
+  border-radius: 4px;
+  outline-width: 1px;;
+}
+
+// === Image Formatting ===
+
+div.image-background {
+  background-color: $color3;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  margin-bottom: $image-radius;
+  margin-top: $image-radius;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: $image-radius;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 1px 1px $box-shadow-color, 0 2px 2px $box-shadow-color, 0 4px 4px $box-shadow-color, 0 16px 16px $box-shadow-color;
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 400px;
+    padding-top: $image-radius;
+    padding-bottom: $image-radius;
+  }
+}
+
+div.caption p {
+  //Center optional caption
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: $image-radius;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+// === Box shadow ===
+
+.item-shadow {
+  box-shadow: 0 1px 1px $box-shadow-color, 0 2px 2px $box-shadow-color, 0 4px 4px $box-shadow-color, 0 16px 16px $box-shadow-color;
+}
+
+// === Detailed Page Format ===
+
+.post-details {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  
+
+  *{
+    padding-top: 5px;
+  }
+}
+
+.post-date {
+  padding-right: $post-details-padding;
+  flex-shrink: 0;
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: baseline;
+  align-content: flex-start;  
+
+  padding-right: $post-details-padding;
+}
+
+.post-tag {
+  padding-left: $post-details-padding;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.github {
+  text-align: center;
+  flex-shrink: 0;
+  padding-left: $post-details-padding;
+}
+
+.post-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  h1 {
+    padding-left: 20px;
+  }
+
+  a{
+    padding-top: 10px;
+  }
+}
+
+.back-button{
+  height: 50px;
+  flex-shrink: 0;
+  max-width:50px;
+
+  background-image: url("/assets/img/back-icon.png");
+}
+
+.back-button:hover {
+  background-image: url("/assets/img/back-icon-filled.png");
+  background-size: cover;
+
+  height: 50px;
+  width: 50px;
+}
+
+// === Music page formatting ===
+
+.music-item {
+  box-shadow: 0 1px 1px $box-shadow-color, 0 2px 2px $box-shadow-color, 0 4px 4px $box-shadow-color, 0 16px 16px $box-shadow-color;
+  padding: $image-radius;
+  border-radius: $image-radius;
+  margin-bottom: $image-radius;
+  margin-top: $image-radius;
+
+  background-color: $color3;
+  width: 80%;
+
+  .tags-wrapper {
+    justify-content: left;
+
+    .post-tag {
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
+  }
+
+
+}
+
+.music-title, .snippet-title{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  h2, h3 {
+    margin-bottom: 5px;
+    padding-right: $item-radius;
+  }
+
+  h3 {
+    text-align: right;
+    flex-shrink: 0;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 80%;
+  display:flex;
+  margin: auto;
+}
+
+div.music-item iframe{
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+// --- below is original css that needs to be organized and refactors ---
+
+
+
 
 // Removes indent from wrapper for content in a post/page
 div.post-content div.wrapper{
   padding: 0px !important;
 }
 
-// Creates a rounded rectangle frame around image
-div.image-background {
-  background-color: #e8e8e8;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  border-radius:30px/30px;
-}
-
-hr.intro-line{
-  color:#000000;
-  background-color:#000000;
-}
-
-//Center optional caption
-div.caption p {
-  text-align: center;
-  padding-top:1em;
-}
-
 // Seperates div from surrounding elements on the top and bottom
 div.separate {
   margin-top: 25px;
   margin-bottom: 25px;
-}
-
-//Sets default image size and centering
-.project-img {
-  max-width: 80%;
-  padding-left: 10%;
-}
-
-//Sets max size and centers image for chess-trainer2.png
-#chess-trainer2-img {
-  max-width: 80%;
-  padding-left: 10%;
-}
-
-//Sets max size and centers image for ninjoreo-main-img
-#ninjoreo-main-img {
-  max-width: 50%;
-  padding-left: 25%;
-}
-
-//Sets max size and centers image for ninjoreo-all-img
-#ninjoreo-all-img {
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-//Sets max size and centers image for ninjoreo-all-img
-#init-tracker-img {
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#random-word-generator-img {
-  max-width: 50%;
-  padding-left: 25%;
-}
-
-#gravity-simulator-img {
-  max-width: 80%;
-  padding-left: 10%;
-}
-
-#impossible-maze-img {
-  max-width: 80%;
-  padding-left: 10%;
-}
-
-#phone-number-word-finder-img {
-  max-width: 80%;
-  padding-left: 10%;
-}
-
-#flappy-bird-img {
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#ode-solver-img {
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#rubber-band-car1-img{
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#rubber-band-car2-img{
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#cable-organizer-final-img{
-  max-width: 90%;
-  padding-left:5%;
-}
-
-#cable-organizer-ideas-img{
-  max-width: 90%;
-  padding-left:5%;
-}
-
-#cable-organizer-prototype-img{
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#astromech-all-img{
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#map-generator-small-img{
-  max-width: 70%;
-  padding-left: 15%;
-}
-
-#map-horizontal-img{
-  width:50%;
-  padding-bottom: 5px;
-  padding-left:25%
-}
-
-#sailless-img{
-  width:90%;
-  padding-left:5%
-}
-
-#sailless-2-img{
-  width:50%;
-  padding-left:25%;
-  padding-bottom:5px
-}
-
-#sailless-3-img{
-  width:50%;
-  padding-left:25%;
-}
-
-//makes space between both footer columns
-div.footer-col {
-  display: inline-block;
-  width: 40%;
-}
-
-//puts some space between contact info
-.contact-list a {
-  padding-right: 5px ;
 }
 
 //allows logo to go in the center
@@ -260,41 +482,5 @@ div.footer-col {
 .wrapper {
   padding-left: 2%;
   padding-right: 2%;
-}
-
-//sizes and positions header logo
-.logo-header img{
-  padding-right:10px;
-  max-height: 50px;
-}
-
-//pushes header logo to top left
-.logo-header{
-  float: left;
-}
-
-//replaces top grey border with white padding
-.site-header {
-  padding-top:5px;
-  border-top: 0px;
-}
-// Adds tab to paragraphs
-// .tab p{
-//   text-indent: 45px;
-// }
-
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-div.music iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 

@@ -1,0 +1,69 @@
+---
+layout: page
+title: Music
+description: Original compositions and arrangements I've worked on as a hobby
+icon: /assets/img/music-icon.png
+permalink: /music/
+slug: music
+categories: groups
+order: 5
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<div class="home">
+
+  <p>I am an amatuer composer and producer. I was first exposed to composition from piano lessons from 3rd grade through high school.
+    One of my two recitals each year was a self-composed solo piece on the piano. </p>
+  <p>I recently started learning to apply more music
+  theory knowledge to my compositions as well as integrating DAW software into my toolset. I currently use FL Studio, and I am experimenting with
+  Musescore for writing sheet music.</p>
+
+  {% assign sorted_music = site.music | sort: 'order' | reverse%}
+
+  {% for project in sorted_music%}
+    <div class="music-item">
+
+      <div class="music-title">
+        <h2>{{project.title}}</h2>
+        <h3>{{project.finished}}</h3>
+      </div>
+
+      <div class="tags-wrapper">
+        {% for tag in project.tags %}
+            <p class="post-tag">•{{tag}}</p>
+        {% endfor %}
+        {% if project.link %}
+        <p class="post-tag">
+          
+          •<a class="link-underline" href={{project.link}}>
+            {% assign linkText = "external-link" %}
+            {% if project.link-text %}
+              {% assign linkText = project.link-text %}
+            {% endif %}
+            {{linkText}}
+          </a>
+          
+        </p>
+        {% endif %}
+      </div>
+      
+      {% if project.filename %}
+        <audio controls src={{project.filename}} type="audio/mpeg">
+        Embeded mp3 not supported by your browser
+        </audio>
+      {% endif %}
+
+      <p>{{project.description}}</p>
+
+      {% if project.video %}
+      <div class="video-container">
+      <iframe class="music-video" src="{{project.video}}?controls=0"
+      allow="encrypted-media; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+      </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+</div>

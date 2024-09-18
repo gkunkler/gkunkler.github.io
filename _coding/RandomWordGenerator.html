@@ -1,0 +1,49 @@
+---
+layout: detailed-page
+title: Random Word Generator
+description: "A program that generates random word based on a given list of words"
+repo: "https://github.com/Rettdog/RandomWordGenerator"
+slug: random-word-generator
+tags: [java]
+time: "Fall 2020"
+order: 10
+---
+
+<div class="wrapper">
+  <div class="image-background">
+    <img class="project-img" src="/assets/img/random-word-generator-img.png" alt="The random word generator with 15 random words." id = "random-word-generator-img">
+  </div>
+</div>
+<div class="wrapper separate tab">
+  <h2>Project Description</h2>
+  <p>This program takes two text files, an alphabet file and a word list. It then returns
+    words that follow the guidlines set by the word list with a given number of letters.</p>
+  <h2>Development</h2>
+  <p>
+    The main reason I started this project was my struggle to come up with a unique name for
+    my D&D character. My goal was to create a program that would take a certain list of words and
+    generate words that sounded similar to them. There are websites like
+    <a href="https://www.fantasynamegenerators.com/">fantasynamegenerators.com</a>, but I needed something more customizable.
+  </p>
+    <p>
+      In order to make my generated words sound like it belonged in the list, I read through each
+      word in the list and created a nested <code>ArrayList</code> of all pairs of letters found. This
+      allowed me to start with one of those pairs and then randomly select another pair that starts with
+      the ending letter of the first pair. I then repeat this process until I have enough letters or there
+      are no pairs to choose from.
+    </p>
+    <p>
+      I decided afterwards to increase the amount of letters from 2 to 3. This caused the words to become
+      more similar because there are more complete syllables. This added a lot of complexity to the
+      <code>ArrayList</code>, which now required 3 layers.
+    </p>
+    <p>
+      I typically use this program as a guide to find interesting sounds, rather than finalized words.
+      I have gotten many laughs from the funny words it can come up with, and many useful ones too. In the end,
+      I found a name for my D&D character that I really love: Yorgonsius.
+    </p>
+  <h2>Download</h2>
+  <p>If you would like to try this out for yourself, you can download the zip folder <a href="/assets/downloads/RandomNameGenerator.zip">here</a>.
+  Just extract the folder, put the txt file you want to use in the /src folder, and change the file name in the program's window. If you are using letters
+  not included in the given alphabet, you can add them to basic-alphabet.txt.</p>
+</div>

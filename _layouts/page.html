@@ -7,8 +7,17 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-    <!-- Loop through the project's languages and display them in the header -->
+    <div class="post-title">
+      {% assign currentPage = page.slug | append: "/" %}
+      {% unless page.url contains currentPage %}
+        {% assign currentPage = page.slug %}
+      {% endunless %}
+      <a href="{{page.url | remove: currentPage | relative_url}}">
+        <image class="back-button" src="/assets/img/back-icon.png" alt="Back button"></image>
+      </a>
+      <h1>{{ page.title | escape }}</h1>
+        
+    </div>
   </header>
 
   <div class="post-content">

@@ -1,0 +1,42 @@
+---
+layout: page
+title: Research
+description: Academic research projects I've taken part in during my studies
+icon: /assets/img/research-icon.png
+permalink: /research/
+slug: research
+categories: groups
+order: 3
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<div class="home">
+
+  <p>This list will grow as I dive deeper into interesting research projects.</p>
+  <p>NOTE: These pages are just placeholder until I add all of the details soon.</p>
+
+  {% assign sorted_research = site.research | sort: 'order' | reverse%}
+
+  {% for project in sorted_research%}
+
+  <a class="no-link-underline" href="{{project.url}}">
+    <div class="trigger snippet item-shadow">
+      <div class="snippet-title">
+        <h2>{{project.title}}</h1>
+        <h3>{{project.time}}</h3>
+      </div>
+
+      <p>{{project.description}}</p>
+
+      <div class="snippet-tags-wrapper">
+        {% for tag in project.tags %}
+            <p class="snippet-tag">•{{tag}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </a>
+
+  {% endfor %}
+
+</div>
