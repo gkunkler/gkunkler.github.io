@@ -197,7 +197,7 @@ hr {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: auto 1fr;
+  // grid-template-rows: auto 1fr;
   gap: 2%;
   padding-bottom: 40px;
 }
@@ -406,6 +406,9 @@ div.caption p {
   box-shadow: 0 1px 1px $box-shadow-color, 0 2px 2px $box-shadow-color, 0 4px 4px $box-shadow-color, 0 16px 16px $box-shadow-color;
   padding: $image-radius;
   border-radius: $image-radius;
+
+  margin: auto;
+
   margin-bottom: $image-radius;
   margin-top: $image-radius;
 
@@ -436,7 +439,6 @@ div.caption p {
 
   h3 {
     text-align: right;
-    flex-shrink: 0;
   }
 }
 
