@@ -5,7 +5,7 @@ permalink: /about/
 slug: about
 ---
 
-Hi! I'm Garrett, a fourth-year mechanical engineering major at [Cal Poly SLO](https://www.calpoly.edu/). For the current academic year (24-25), I will be in Stockholm, Sweden studying abroad at [KTH](https://www.kth.se/en). In the fall of 2025 I will return to San Luis Obispo to finish my bachelor's degree and graduate Spring 2026.
+Hi! I'm Garrett, a fourth-year mechanical engineering major at [Cal Poly SLO](https://www.calpoly.edu/). For the current academic year (24-25), I will be in Stockholm, Sweden studying abroad at [KTH](https://www.kth.se/en). In the fall of 2025, I will return to San Luis Obispo to finish my bachelor's degree and graduate Spring 2026.
 
 My passion lies in applying computational tools to solve interesting technical problems, whether that be robotics, scientific research, or the development of medical devices.
 
@@ -17,8 +17,8 @@ During my time in university I have participated in multiple internship opportun
 
 I also have a [LinkedIn](www.linkedin.com/in/gkunkler) page that highlights my professional accomplishments. If you want to see more of my coding projects you can check out my [GitHub](https://github.com/Rettdog), but I don't update that too often.
 
-And finally, while it isn't currently updated, here's my [resume](/assets/downloads/Resumes/GarrettKunkler_Resume_F2023.pdf) for a more concise viewing of my professional work. 
+And finally, here's my [resume](/assets/downloads/Resumes/GarrettKunkler_Resume_20250122.pdf) for a more concise viewing of my professional work. 
 
 Thanks for reading!
 
-###### Site last updated: Sep 9, 2024
+###### Site last updated: Jan 22, 2024
