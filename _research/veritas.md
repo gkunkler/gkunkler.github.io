@@ -1,6 +1,6 @@
 ---
 layout: detailed-page
-title: VERITAS Astrophysics Research
+title: VERITAS Astrophysics
 description: "Highlights of my work with Dr. Jodi Christiansen at Cal Poly"
 slug: veritas
 tags: [physics, linux, c++, cal-poly]

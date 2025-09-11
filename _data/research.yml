@@ -1,0 +1,32 @@
+publications:
+- title: "Recent Highlights from the VERITAS AGN Discovery Program"
+  authors: "Wystan Benbow, Jodi Christiansen, Julia Francescutti, Garrett Kunkler, Will Root, Phoebe Zyla"
+  # url-text: "arXiv"
+  url: "https://arxiv.org/abs/2503.11543"
+  time: 2025
+
+presentations:
+- title: "Reconstructing Neutrino Interactions with Machine Learning"
+  authors: "Garrett Kunkler, Dr. David Caratelli, Chuyue \"Michaelia\" Fang"
+  time: "August 18, 2025"
+  location: "UCSB Physics REU Symposium"
+  tags: ["oral", "in-person"]
+- title: "Investigating the Impact of Detector Modeling Uncertainties on Machine Learning Reconstruction in Neutrino Experiments"
+  authors: "Garrett Kunkler, Dr. David Caratelli, Chuyue \"Michaelia\" Fang"
+  time: "August 14, 2025"
+  location: "CSEP Summer Colloquium"
+  internal-link-text: "poster"
+  internal-link: "assets/downloads/REUPosterPresentation_GarrettKunkler.pdf"
+  tags: ["in-person"]
+- title: "A Repulsive Effect: Modelling Coulomb Interactions in a 1 Micron X-ray CT Sensor"
+  authors: "Garrett Kunkler, Rickard Brunskog"
+  link-text: "abstract-slides"
+  link: "https://indico.cern.ch/event/1489052/contributions/6483379/"
+  time: "May 8, 2025"
+  location: "Allpix Squared Workshop at Nikhef in Amsterdam"
+  tags: ["oral", "in-person"]
+- title: "Detecting and Discovering Gamma-Ray Emitting Blazars with VERITAS"
+  authors: "Julia Francescutti, Garrett Kunkler, Will Root, Phoebe Zyla, Dr. Jodi Christiansen"
+  time: "May 5, 2024"
+  location: "Cal Poly Bailey College of Science and Mathematics 2024 Student Research Conference"
+  tags: [in-person, poster]

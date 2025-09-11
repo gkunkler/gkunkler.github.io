@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Research
-description: Academic research projects I've taken part in during my studies
+description: Academic research projects, publications, and presentations
 icon: /assets/img/research-icon.png
 permalink: /research/
 slug: research
 categories: groups
-order: 3
+order: 2
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
@@ -14,11 +14,12 @@ order: 3
 <div class="home">
 
   <p>
-    My interest in learning has driven me to explore scientific research. 
-    In addition to learning and applying physics concepts, I especially enjoy the computational side of science 
-    where algorithms are designed to process data and analyze results. 
-    I hope this list grows as I further my passion for science.
+    As I direct my sights towards graduate school, I've accumulated experience in a variety of research fields. They have given me a better understanding 
+    on how I operate in a research setting, and what I value in a research group/project. As I further my passion for physics, computation, and research, I 
+    hope this list grows to reflect my research interests and publications.
   </p>
+
+  <h1>Research Projects</h1>
 
   {% assign sorted_research = site.research | sort: 'order' | reverse%}
 
@@ -40,6 +41,61 @@ order: 3
       </div>
     </div>
   </a>
+
+  {% endfor %}
+
+  <h1>Publications</h1>
+
+  {% for paper in site.data.research.publications %}
+
+  <a class="no-link-underline" href="{{paper.url}}" target="_blank">
+    <div class="trigger snippet item-shadow small-research">
+      <div class="snippet-title">
+        <h2>{{paper.title}}</h1>
+        <h3>{{paper.time}}</h3>
+      </div>
+
+      <p>{{paper.authors}}</p>
+
+    </div>
+  </a>
+
+  {% endfor %}
+
+  <h1>Presentations</h1>
+
+  {% for presentation in site.data.research.presentations %}
+
+    <div class="trigger snippet item-shadow no-link small-research">
+      <div class="snippet-title">
+        <h2>{{presentation.title}}</h2>
+        <h3>{{presentation.time}}</h3>
+      </div>
+
+      <h3>{{presentation.authors}}</h3>
+      <p>{{presentation.location}}</p>
+
+      <div class="tags-wrapper">
+        {% for tag in presentation.tags %}
+            <p class="post-tag">•{{tag}}</p>
+        {% endfor %}
+        {% if presentation.internal-link && presentation.internal-link-text %}
+        <p class="post-tag">
+          •<a class="link-underline" href={{presentation.internal-link | relative_url}}>
+            {{presentation.internal-link-text}}
+          </a>
+        </p>
+        {% endif %}
+        {% if presentation.link && presentation.link-text %}
+        <p class="post-tag">
+          •<a class="link-underline" href={{presentation.link}}>
+            {{presentation.link-text}}
+          </a>
+        </p>
+        {% endif %}
+      </div>
+
+    </div>
 
   {% endfor %}
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Music
-description: Original compositions and arrangements I've worked on as a hobby
+description: My hobby music portfolio
 icon: /assets/img/music-icon.png
 permalink: /music/
 slug: music
@@ -13,11 +13,12 @@ order: 5
 
 <div class="home">
 
-  <p>I am an amatuer composer and producer. I was first exposed to composition from piano lessons from 3rd grade through high school.
-    One of my two recitals each year was a self-composed solo piece on the piano. </p>
-  <p>I recently started learning to apply more music
-  theory knowledge to my compositions as well as integrating DAW software into my toolset. I currently use FL Studio, and I am experimenting with
-  Musescore for writing sheet music.</p>
+  <p>I compose and produce my own music as a hobby. I've collected collected many of my creations here, as well as on my <a href="https://youtube.com/@coolohm">Youtube Channel</a>.</p>
+  <p>My musical endeavors began with piano lessons from 3rd grade through high school. One of the two recitals we had each year were our own compositions, so I've been 
+    pushed to write music since I was young.
+    However, it wasn't until the summer before college that I actually found the intrinsic motivation to continue making music. This is when I started exploring digital music using 
+    FL Studio. I've also used MuseScore to create sheet music for my piano solo pieces.
+  </p>
 
   {% assign sorted_music = site.music | sort: 'order' | reverse%}
 
@@ -33,10 +34,17 @@ order: 5
         {% for tag in project.tags %}
             <p class="post-tag">•{{tag}}</p>
         {% endfor %}
+        {% if project.internal-link && project.internal-link-text %}
+        <p class="post-tag">
+          •<a class="link-underline" href={{project.internal-link | relative_url}}>
+            {{project.internal-link-text}}
+          </a>
+        </p>
+        {% endif %}
         {% if project.link %}
         <p class="post-tag">
           
-          •<a class="link-underline" href={{project.link}}>
+          •<a class="link-underline" href={{project.link}} target="_blank">
             {% assign linkText = "external-link" %}
             {% if project.link-text %}
               {% assign linkText = project.link-text %}

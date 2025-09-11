@@ -79,7 +79,7 @@ body {
     border-width: 0px;
     position: bottom;
 
-    display:flex;
+    display:flow-root;
     justify-content: space-between;
     align-content: baseline;
 
@@ -106,6 +106,7 @@ body {
 .site-nav {
   // vertically center subpage list (need to fix for menu icon)
   margin-top: 40px;
+  float: right;
   background-color: $color2;
   border: none;
 
@@ -137,6 +138,7 @@ div.footer-col {
   //makes space between both footer columns
   display: inline-block;
   width: 40%;
+
 }
 
 .contact-list a {
@@ -245,9 +247,26 @@ div.snippet{
     padding-left: 10px;
     color: $color2;
   }
+
 }
 
-div.snippet:not(.music):hover{
+.small-research {
+      h1{
+        font-size: 40px;
+      }
+      h2{
+        font-size: 25px;
+      }
+      h3{
+        font-size: 18px;
+        margin-bottom: 0px;
+      }
+      p{
+        margin-bottom: 0px;
+      }
+  }
+
+div.snippet:not(.music, .no-link):hover{
   text-decoration: none;
   outline-style: solid;
   outline-color: $color3;
@@ -351,7 +370,7 @@ div.caption p {
   flex-direction: row;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: flex-end;
   align-items: baseline;
   align-content: flex-start;  
 
@@ -370,12 +389,17 @@ div.caption p {
   padding-left: $post-details-padding;
 }
 
+.post-header {
+  margin-bottom: 15px;
+}
+
 .post-title {
   display: flex;
   flex-direction: row;
   justify-content: left;
 
   h1 {
+    font-size: 60px;
     padding-left: 20px;
   }
 
@@ -423,7 +447,6 @@ div.caption p {
       padding-bottom: 15px;
     }
   }
-
 
 }
 

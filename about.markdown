@@ -5,18 +5,18 @@ permalink: /about/
 slug: about
 ---
 
-Hi! I'm Garrett, a fourth-year mechanical engineering major at [Cal Poly SLO](https://www.calpoly.edu/). For the current academic year (24-25), I will be in Stockholm, Sweden studying abroad at [KTH University](https://www.kth.se/en). In the fall of 2025, I will return to San Luis Obispo to finish my bachelor's degree and graduate Spring 2026.
+Hi! I'm Garrett, a fifth-year mechanical engineering major at [Cal Poly SLO](https://www.calpoly.edu/). I have returned from my year studying abroad in Stockholm, Sweden at [KTH University](https://www.kth.se/en). I will finish my bachelor's degree at Cal Poly and graduate Spring 2026.
 
-While I am studying mechanical engineering, my desire to be closer to the pursuit of knowledge has drawn me to math and physics minors. My favorite parts of the projects I’ve worked on have been the theoretical derivations and analysis of data. I have also shifted my extracurricular focus towards physics research opportunities, which have further solidified this career trajectory. 
+While I am studying mechanical engineering, my desire to be closer to the pursuit of knowledge has drawn me closer to physics and applied physics. I've had experience working both in [industry](https://gkunkler.github.io/work/) and doing [academic research](https://gkunkler.github.io/research/), and I believe that the derivations, data analysis, and simulations that are most rewarding to me will be found by pursuing graduate school. To support this goal, I've extended my course curriculum to the core physics courses, as well as a few extra math courses. This has given me more appreciation for the underlying physics hidden within the empirical engineering formulas, and augments the problem-solving mindset I am developing through my mechanical engineering degree.
 
-I’ve been fostering my programming skills since high school. What started as a weekly Java course through the [League of Amazing Programmers'](https://www.jointheleague.org/) has blossomed into a passion for programming on my own. I have expanded to Python, MATLAB, etc., which has supported my confidence to dive into challenging problems with the expectation that I will pick up the syntax along the way. You can check out the projects I've written about in the [Coding Projects](https://gkunkler.github.io/coding/) section of my website.
+I especially enjoy the programming and simulation side of science. I've ben fostering my coding skills since weekly high school Java classes through the [League of Amazing Programmers'](https://www.jointheleague.org/). This blossomed into a passion for programming on my own, which has expanded to Python, MATLAB, and many other languages. This has developed into a confidence to dive into challenging problems with the comfort that I will pick up the tools along the way. You can check out the projects I've written about in the [Coding Projects](https://gkunkler.github.io/coding/) section of my website.
 
-During my time in university I have participated in multiple internship opportunities where I could test my experience against professional standards and continue to direct the development of my skills towards a fullfilling career. Descriptions of these positions can be found in the [Work Experience](https://gkunkler.github.io/work/) section of my website. Brief overviews of the research work I have done is located [here](https://gkunkler.github.io/research/).
+I believe that for me to have a fulfilling career, I personally need my work to have a clear positive impact. My internship at Dexcom working on wearable glucose sensors, as well as my research project in the KTH medical imaging group, have both shown me that it is easiest to be proud of my work when the end goal, even if multiple steps removed from my current project, is a clear net positive to patients. So, whether it's patients, customers, or the direct pursuit of societally relavent scientific knowledge, I hope to find a research opportunity that supports my strong intrinsic motivation to solve technical problems.
 
 I also have a [LinkedIn](www.linkedin.com/in/gkunkler) page that highlights my professional accomplishments. If you want to see more of my coding projects you can check out my [GitHub](https://github.com/gkunkler), but I don't update that too often.
 
-And finally, here's my [resume](/assets/downloads/Resumes/GarrettKunkler_Resume_2025-05-07.pdf) for a more concise viewing of my professional work. 
+And finally, here's my [resume](/assets/downloads/Resumes/GarrettKunkler_Resume.pdf) for a more concise viewing of my professional work. 
 
 Thanks for reading!
 
-###### Site last updated: May 7, 2024
+###### Site last updated: September 11, 2025
