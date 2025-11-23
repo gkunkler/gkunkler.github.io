@@ -495,6 +495,11 @@ div.separate {
   margin-bottom: 25px;
 }
 
+div.post-content p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 //allows logo to go in the center
 .logo-wrapper{
   display: inline-block;

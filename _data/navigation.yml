@@ -1,6 +1,6 @@
 - name: "About"
   link: "/about/"
-- name: "Resume"
-  link: "assets/downloads/Resumes/GarrettKunkler_Resume.pdf"
+- name: "CV"
+  link: "assets/downloads/Resumes/GarrettKunkler_CV_2025-11-22.pdf"
 - name: "Home"
   link: "/"

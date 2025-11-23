@@ -8,12 +8,7 @@ title: Home
 ---
 
 <div class="home-title">
-  <h1>Explore my Portfolio</h1>
+  <h1>Explore my portfolio</h1>
 </div>
 
-
-Here you will find information on the projects I have worked on throughout the years.
-
-Click on the links below to explore my various interests.
-
-If you would like to learn more about me and my studies, check out the About Me page in the top right.
+Here, I have organized many of my research, industry, and personal projects. For a more detailed biography, see my [About Me](https://gkunkler.github.io/about/) page. The tiles below will take you to my various interests.
