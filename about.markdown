@@ -11,7 +11,7 @@ While I am studying mechanical engineering, my desire to be closer to the pursui
 
 I especially enjoy the programming and simulation side of science. I've ben fostering my coding skills since weekly high school Java classes through the [League of Amazing Programmers'](https://www.jointheleague.org/). This blossomed into a passion for programming on my own, which has expanded to Python, MATLAB, and many other languages. This has developed into a confidence to dive into challenging problems with the comfort that I will pick up the tools along the way. You can check out the projects I've written about in the [Coding Projects](https://gkunkler.github.io/coding/) section of my website.
 
-I believe that for me to have a fulfilling career, I personally need my work to have a clear positive impact. My internship at Dexcom working on wearable glucose sensors, as well as my research project in the KTH medical imaging group, have both shown me that it is easiest to be proud of my work when the end goal, even if multiple steps removed from my current project, is a clear net positive to patients. So, whether it's patients, customers, or the direct pursuit of societally relavent scientific knowledge, I hope to find a research opportunity that supports my strong intrinsic motivation to solve technical problems.
+I believe that for me to have a fulfilling career, I personally need my work to have a clear positive impact. My internship at Dexcom working on wearable glucose sensors, as well as my research project in the KTH medical imaging group, have both shown me that it is easiest to be proud of my work when the end goal, even if multiple steps removed from my current project, is a clear net positive to patients. So, whether it's patients, customers, or the direct pursuit of societally relavent scientific knowledge, I hope to find a research opportunity in the biomedical space that supports my strong intrinsic motivation to solve technical problems.
 
 I also have a [LinkedIn](www.linkedin.com/in/gkunkler) page that highlights my professional accomplishments. If you want to see more of my coding projects you can check out my [GitHub](https://github.com/gkunkler), but I don't update that too often.
 
@@ -19,4 +19,4 @@ And finally, here's my [resume](/assets/downloads/Resumes/GarrettKunkler_Resume.
 
 Thanks for reading!
 
-###### Site last updated: September 11, 2025
+###### Site last updated: November 23, 2025
