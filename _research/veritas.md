@@ -17,7 +17,7 @@ order: 1
   </div>
 </div>
 
-I started working in Dr. Jodi Christiansen's lab at the beginning of my third year at Cal Poly. I am really interested in a physics-based career path, so this was an amazing opportunity to get involved with undergraduate research work. 
+I started working in Dr. Jodi Christiansen's lab at the beginning of my third year at Cal Poly. I was considering a physics career path, so this was an amazing opportunity to get involved with undergraduate research work. 
 
 Our group is a part of the research collaboration that analyzes data from the [VERITAS Telescope](https://veritas.sao.arizona.edu/), specifically the spectra of blazars and other high energy extragalactic sources.
 
