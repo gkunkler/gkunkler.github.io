@@ -19,4 +19,4 @@ And finally, here's my [resume](/assets/downloads/Resumes/GarrettKunkler_Resume.
 
 Thanks for reading! Reach out at [gnkunkler@gmail.com](gnkunkler@gmail.com) if you would like to connect!
 
-###### Site last updated: September 1, 2026
+###### Site last updated: October 2, 2026
